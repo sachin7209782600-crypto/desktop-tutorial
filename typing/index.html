@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Typing Coach</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <div class="stats-area">
+            <p>WPM: <span id="wpm-display">0</span></p>
+            <p>Accuracy: <span id="accuracy-display">100%</span></p>
+        </div>
+
+        <div id="source-text" class="text-to-type">
+            </div>
+
+        <textarea id="input-area" placeholder="Start typing here..." autofocus></textarea>
+        
+        <div id="keyboard-visual">
+            </div>
+    </div>
+    
+    <div class="controls-area">
+    <button id="next-lesson-btn">➡️ Next </button>
+    <button id="reset-btn">🔄 Reset</button>
+    <button id="stop-btn">⏹️ End</button>
+</div>
+    <script src="s.js"></script>
+</body>
+</html>

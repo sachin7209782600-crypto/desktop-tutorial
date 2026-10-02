@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the text to be typed */
+.text-to-type {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    height: 100px;
+    overflow: hidden;
+    /* Important for clean look */
+}
+
+/* Styles applied by JavaScript */
+.correct {
+    color: green;
+}
+
+.incorrect {
+    background-color: #ffdddd;
+    /* Highlight wrong char */
+    color: red;
+}
+
+.current {
+    border-bottom: 2px solid orange;
+    /* Highlight current char */
+}
+
+/* Input box styling */
+#input-area {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+
+#input-area:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* Stats display styling */
+#stats {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#stats span {
+    margin-right: 20px;
+}
+
+#stats .label {
+    font-weight: bold;
+}
+
+#stats .value {
+    color: #007bff;
+}
+
+#stats .value.error {
+    color: red;
+}
+
+#stats .value.wpm {
+    color: green;
+}
+
+#stats .value.accuracy {
+    color: orange;
+}
+
+#stats .value.cpm {
+    color: purple;
+}
+
+#stats .value.time {
+    color: teal;
+}
+
+#stats .value.strokes {
+    color: brown;
+}
+
+#stats .value.correct {
+    color: darkgreen;
+}
+
+#stats .value.incorrect {
+    color: darkred;
+}
+
+#stats .value.untyped {
+    color: gray;
+}
+
+#stats .value.corrected {
+    color: darkorange;
+}
+
+/* Stats area styling */
+.stats-area {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.stats-area p {
+    margin: 5px 0;
+}
+
+/* Controls area styling */
+.controls-area {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.controls-area button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.controls-area button:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+}
+
+.controls-area button:active {
+    transform: scale(0.98);
+}
+
+/* Keyboard visual area */
+#keyboard-visual {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fafafa;
+    min-height: 30px;
+}
